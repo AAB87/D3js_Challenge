@@ -13,7 +13,7 @@ Below there is an explanation on how to run and reproduce the example.
 ## Usage
 Please follow these steps to visualize the exercise. ``nodejs`` must be previously installed in your computer in advance.
 1. Move to any desired folder: ``cd <path>``.
-2. Clone there git repository: ``git clone https://github.com/AlonsoAndradeBlazquez/D3js_ChallengeTask_MasterBigData.git``.
+2. Clone there git repository: ``git clone https://github.com/AAB87/D3js_ChallengeTask_MasterBigData.git``.
 3. Move to folder "D3js_ChallengeTask_MasterBigData": ``cd D3js_ChallengeTask_MasterBigData``.
 4. Run ``npm start`` in the console. Web page will be displayed in your browser.
 
