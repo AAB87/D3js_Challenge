@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <title>M7_DataVisualization_Task3</title>
+  </head>
+  <body>
+    <h1 class="exerciseTitle">
+      Advanced Analytics on Big Data. Data Visualization<br>
+      Task 3: Challenge exercise
+    </h1>
+    <div class="exerciseStatement">
+            Based on the population country and year we got on the first nvd3 sample (1960 - 2016 all countries in the world), create a world <b>map chart</b> and combo to pick the year and display data as a plus create an animated version, transitioning from 1960 to 2016.
+        <ul>
+            <li class="additionalFeatures"><b>(+)</b> Adding a slider to set animation speed</li>
+            <li class="additionalFeatures"><b>(+)</b> Displaying total population for the year selected</li>
+            <li class="additionalFeatures"><b>(+)</b> Appending color legend</li>
+        </ul>
+    </div>
+    <br>
+    <a href="https://github.com/AlonsoAndradeBlazquez/D3js_ChallengeTask_MasterBigData.git">
+      <img class="gitIcon" src="icons/git_icon.png" alt="Link to Github repository" title="Link to Github repository: AlonsoAndradeBlazquez">
+    </a>
+    <hr>
+    <br>
+    <div>
+        <div class="leftContent"></div>
+        <div class="rightContent">
+            Select a year: 
+            <select id="yearSelection"></select>
+            <br><br>
+            <div class="animation">
+                <span class="animationLabel">Animated version:</span>
+                <br>
+                <div class="animationControls">
+                    <div class="speedSlider">
+                    Speed:
+                    <input type="range" id="speed" value="-100" min="-1000" max="-100" step="100" list="tickmarks">
+                    <datalist id="tickmarks">
+                        <option value="-1000">
+                        <option value="-900">
+                        <option value="-800">
+                        <option value="-700">
+                        <option value="-600">
+                        <option value="-500">
+                        <option value="-400">
+                        <option value="-300">
+                        <option value="-200">
+                        <option value="-100">
+                    </datalist>
+                    </div>
+                    <button id="AnimatedVersion">Start animation</button>
+                </div>
+                <div class="yearShown">
+                    <span id="animationCurrentYearLabel" hidden>Showing data from year: </span>
+                    <br>
+                    <span id="animationCurrentYear" class="animationCurrentYear"></span>
+                </div>
+
+                <div class="worldPopulation">
+                    <span>Total population: </span>
+                    <br>
+                    <span id="totalPopulation" class="totalPopulation"></span>
+                </div>
+            </div>
+            <br><br>
+        </div>
+    </div>
+    <script src="http://d3js.org/d3.v4.min.js"></script>
+    <script src="http://d3js.org/queue.v1.min.js"></script>
+    <script src="http://d3js.org/topojson.v1.min.js"></script>
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./populationData.js"></script>
+    <script src="./d3-tip.js"></script>
+    <script src="./main.js"></script>
+    </body>
+
+</html>

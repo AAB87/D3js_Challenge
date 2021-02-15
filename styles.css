@@ -1,0 +1,142 @@
+body {
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+.exerciseTitle {
+  color:black;
+  font-size: 25px;
+  font-family: helvetica;
+  border:2px solid DodgerBlue;
+  background-color:rgb(231, 241, 241); 
+}
+
+.exerciseStatement {
+  font-family:helvetica; 
+  font-size:100%;
+  text-align:left;
+}
+
+ul {
+  margin-top: 4px;
+}
+
+.additionalFeatures {
+  color: darkgreen;
+}
+
+.gitIcon {
+  width: 25px;
+  height: 25px;
+}
+
+.names {
+  fill: none;
+  stroke: #fff;
+  stroke-linejoin: round;
+}
+
+/* Tooltip CSS */
+.d3-tip {
+  line-height: 1.5;
+  font-weight: 400;
+  font-family: "avenir next", Arial, sans-serif;
+  padding: 6px;
+  background: rgba(0, 0, 0, 0.6);
+  color: #FFA500;
+  border-radius: 1px;
+  pointer-events: none;
+}
+
+/* Creates a small triangle extender for the tooltip */
+.d3-tip:after {
+  box-sizing: border-box;
+  display: inline;
+  font-size: 8px;
+  line-height: 1.5;
+  color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  pointer-events: none;
+
+}
+
+/* Northward tooltips */
+.d3-tip.n:after {
+  content: "\25BC";
+  margin: -1px 0 0 0;
+  top: 100%;
+  left: 0;
+  text-align: center;
+}
+
+/* Eastward tooltips */
+.d3-tip.e:after {
+  content: "\25C0";
+  margin: -4px 0 0 0;
+  top: 50%;
+  left: -8px;
+}
+
+/* Southward tooltips */
+.d3-tip.s:after {
+  content: "\25B2";
+  margin: 0 0 1px 0;
+  top: -8px;
+  left: 0;
+  text-align: center;
+}
+
+/* Westward tooltips */
+.d3-tip.w:after {
+  content: "\25B6";
+  margin: -4px 0 0 -1px;
+  top: 50%;
+  left: 100%;
+}
+
+
+.details {
+  color: white;
+}
+
+.rightContent {
+  float: left;
+  padding: 20px;
+  height: 900px;
+}
+
+.leftContent {
+  float: left;
+}
+
+.animation {
+  margin-top: 30px;
+}
+
+.animationControls {
+  margin-top: 5px;
+}
+
+.animationLabel{
+  font-weight: bold;
+}
+
+.speedSlider {
+  margin-bottom: 10px;
+}
+
+.animationCurrentYear {
+  font-size: xx-large;
+}
+
+.yearShown {
+  padding-top: 20px;
+}
+
+.worldPopulation {
+  margin-top: 50px;
+  margin-bottom: 10px;
+}
+
+.totalPopulation {
+  font-size: xx-large;
+}
